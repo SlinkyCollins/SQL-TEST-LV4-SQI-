@@ -1,0 +1,24 @@
+SECTION A
+
+1. SQL is Structured Query Language
+2. boolean and integer
+3. COUNT(), SUM(), AVG()
+
+
+SECTION B
+
+1. UPDATE employees SET Ethnicity = 'AFRICAN' WHERE Ethnicity = 'Black'
+
+2. DELETE Employee_ID FROM employees WHERE employee_id = 'E02002,E02005,E02006,E02007'
+
+3. SELECT * FROM employees WHERE Gender = 'female' && Ethnicity = 'asian' ORDER BY Full_Name DESC
+
+4. SELECT Employee_ID FROM employees WHERE Employee_ID = 'E02008' && Job_Title = 'Analyst II'
+
+5. DELETE * FROM employees WHERE Age > 60;
+
+6. SELECT UPPER(Full_Name) AS Full_Name, Department FROM employees WHERE Department IN ('IT', 'Marketing','Engineering') ORDER BY Full_Name ASC
+
+7. SELECT Full_Name, Annual_Salary FROM employees WHERE Annual_Salary > 70000 AND Full_Name NOT IN ('Kai Le', 'Ezra Vu', 'Jade Hu');
+
+8. SELECT CONCAT('Hello, My name is ', CONCAT(Full_Name), 'I am a director in the ', CONCAT(Department), ' department, my business Unit is ', CONCAT(Business_Unit), 'and I am ', CONCAT(Age), 'years old.') AS INTRODUCTION FROM employees WHERE role= 'Director' ORDER BY CONCAT(Full_Name) ASC;
